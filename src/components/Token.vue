@@ -130,7 +130,7 @@
   import LinkBox from './LinkBox.vue';
   import SponsorsList from './SponsorsList.vue';
   import BottomBlock from './BottomBlock.vue';
-  import Tabs from '../../node_modules/vue-nav-tabs/dist/vue-tabs.js'
+  import Tabs from 'vue-nav-tabs/dist/vue-tabs.js'
   import 'vue-nav-tabs/themes/vue-tabs.css'
 
 export default {

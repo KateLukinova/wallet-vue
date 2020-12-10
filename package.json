@@ -4,7 +4,7 @@
   "description": "My template",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --port 8083 --open --config ./build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --port 8084 --open --config ./build/webpack.dev.conf.js",
     "build": "webpack --config ./build/webpack.build.conf.js"
   },
   "browserslist": [
