@@ -1,0 +1,38 @@
+@import "mixins";
+
+@font-face {
+  font-family: 'Golos-Regular';
+  src: url('../fonts/Golos-Regular.eot');
+  src:
+    url('../fonts/Golos-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Golos-Regular.woff2') format('woff2'),
+    url('../fonts/Golos-Regular.woff') format('woff'),
+    url('../fonts/Golos-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Golos-Medium';
+  src: url('../fonts/Golos-Medium.eot');
+  src:
+    url('../fonts/Golos-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Golos-Medium.woff2') format('woff2'),
+    url('../fonts/Golos-Medium.woff') format('woff'),
+    url('../fonts/Golos-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '../fonts/Golos-Black';
+  src: url('../fonts/Golos-Black.eot');
+  src:
+    url('../fonts/Golos-Black.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Golos-Black.woff2') format('woff2'),
+    url('../fonts/Golos-Black.woff') format('woff'),
+    url('../fonts/Golos-Black.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
