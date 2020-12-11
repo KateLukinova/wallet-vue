@@ -32,7 +32,7 @@
         </div>
         <ul class="navbar-nav">
           <li class="nav-item">
-            <router-link to="/" class="nav-link">
+            <router-link to="/main" class="nav-link">
               Wallet
             </router-link>
           </li>
@@ -44,6 +44,11 @@
           <li class="nav-item">
             <router-link class="nav-link" to="/swap">
               Swap
+            </router-link>
+          </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/vpn-page">
+              VPN
             </router-link>
           </li>
           <li class="nav-item">

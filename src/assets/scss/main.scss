@@ -226,6 +226,19 @@ a.m-btn, button.m-btn {
     box-shadow: none;
     outline: none;
   }
+
+  &.text-black {
+    color: #070E1E;
+    background: linear-gradient(119.32deg, #00F5A0 0%, #00D9F5 100%);
+    border-radius: 10px;
+  }
+  i {
+    font-style: normal;
+    font-size: 13px;
+    margin-left: 8px;
+    margin-bottom: -6px;
+    margin-right: 12px;
+  }
 }
 
 .gradient-color {

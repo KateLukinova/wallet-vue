@@ -26,14 +26,19 @@ const Main = Vue.component('Main', require('./components/Main.vue').default)
 const Token = Vue.component('Token', require('./components/Token.vue').default)
 const Swap = Vue.component('Swap', require('./components/Swap.vue').default)
 const About = Vue.component('About', require('./components/About.vue').default)
+const GoPro = Vue.component('GoPro', require('./components/GoPro.vue').default)
+const VpnPage = Vue.component('VpnPage', require('./components/VpnPage.vue').default)
 const LinkBox = Vue.component('LinkBox', require('./components/LinkBox.vue').default)
 
 
 const routes = [
   { path: '/', component: Main },
+  { path: '/main', component: Main },
   { path: '/token', component: Token },
   { path: '/swap', component: Swap },
-  { path: '/about', component: About }
+  { path: '/about', component: About },
+  { path: '/go-pro', component: GoPro },
+  { path: '/vpn-page', component: VpnPage }
 ]
 
 const router = new VueRouter({

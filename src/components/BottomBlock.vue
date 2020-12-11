@@ -11,14 +11,14 @@
            <path fill-rule="evenodd" clip-rule="evenodd" d="M51.5257 0L100 20.5263V76.3174L51.529 100L24.6049 87.6189L24.5921 87.613L0 76.3986V20.4547L51.5257 0ZM8.82353 29.9233L22.0588 35.5277V76.9429L8.82353 70.9074V29.9233ZM30.8824 80.9764L47.0588 88.4152V45.0053L30.8824 38.9613V80.9764ZM55.8824 44.8685V61.5372L91.1765 47.7416V29.9233L55.8824 44.8685ZM84.4925 23.3566L51.3665 37.3837L28.1362 28.7042L15.8104 23.4849L51.4155 9.3503L84.4925 23.3566ZM91.1765 57.028L55.8824 70.8236V88.233L91.1765 70.9886V57.028Z" fill="white"/>
          </svg>
          <div class="text-block">
-           <h5 id="mainH5">Go PRO to 2 BNB Annualy ⚡️</h5>
-           <p id="mainPBlockSeven">
+           <h5>Go PRO to 2 BNB Annualy ⚡️</h5>
+           <p>
              Access to multi-account; OTC transactions;<br>
              No hidden fees; Special offers from the company
            </p>
          </div>
        </div>
-       <a href="#" class="black-button">Purchase PRO ⚡️</a>
+       <router-link to="/go-pro" class="black-button">Purchase PRO ⚡️</router-link>
      </div>
      <h4>
        Buy, Trade, Manage, and Exchange cryptocurrency on your mobile phone in any time

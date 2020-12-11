@@ -76,7 +76,7 @@ module.exports = {
       },
       {
         // images / icons
-        test: /\.(png|jpg|gif|svg)$/,
+        test: /\.(svg|png|jpe?g|gif)$/,
         loader: "file-loader",
         options: {
           esModule: false,

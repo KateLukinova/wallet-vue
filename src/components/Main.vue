@@ -87,7 +87,7 @@
               <div class="two-block mobile-column-reverse">
                 <div class="column aos-init aos-animate" data-aos="fade-left">
                   <div class="img">
-<!--                    <img src="img/tail1.svg" alt="">-->
+                    <img src="../assets/img/tail1.svg" alt="">
                   </div>
                 </div>
                 <div class="column aos-init aos-animate padd-top" data-aos="fade-up">
@@ -277,7 +277,6 @@
     <feedback-form></feedback-form>
     <bottom-block></bottom-block>
     <m-footer></m-footer>
-
   </div>
 </template>
 
