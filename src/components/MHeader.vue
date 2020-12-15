@@ -140,8 +140,6 @@ export default {
     .navbar-brand {
       width: 20vw;
       min-width: 140px;
-      padding: 12px 0;
-      padding-bottom: 0;
       svg {
         width: 100%;
         max-width: 210px;
