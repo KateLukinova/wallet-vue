@@ -733,18 +733,11 @@ span.color-green {
   color: #FFFFFF;
 }
 
-.bg-before {
-  background: -o-linear-gradient(left, #FAFAFA 50%, white 50%);
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #FAFAFA), color-stop(50%, white));
-  background: linear-gradient(to right, #FAFAFA 50%, white 50%);
-  background-size: 100% 700px;
-}
-
 .main-swap {
   padding-top: 197px;
   width: 100%;
   height: auto;
-  background-image: url("../img/main-bg.svg");
+  background-image: url("../img/main-bg.jpg");
   background-position: top center;
   background-repeat: no-repeat;
   background-size: 100% auto;

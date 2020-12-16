@@ -45,7 +45,7 @@
   .align-end {
     min-height: 620px;
     height: auto;
-    background-image: url("../assets/img/hous.jpg");
+    background-image: url("../assets/img/gr.jpg");
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
@@ -68,13 +68,16 @@
       margin-top: 40px;
       max-width: 1045px;
       width: 90%;
+      color: #070E1E;
+
+      &.green {
+        color: #0169FE;
+      }
     }
   }
 
   .bottom-block {
-    background: -o-linear-gradient(top, #0F243F 0%, #0b1323  100%);
-    background: -webkit-gradient(linear, left top, left bottom, from(#0F243F), to(#0b1323));
-    background: linear-gradient(180deg, #0F243F 0%, #0b1323  100%);
+    background-color: #F1F1F5;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -100,6 +103,7 @@
       font-size: 48px;
       width: 90%;
       max-width: 1110px;
+      color: #070E1E;
     }
 
     .link-box {

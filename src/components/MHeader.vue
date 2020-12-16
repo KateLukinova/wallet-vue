@@ -61,6 +61,11 @@
               About
             </router-link>
           </li>
+          <li class="nav-item">
+            <router-link class="nav-link" to="/news">
+              News
+            </router-link>
+          </li>
           <li><lang-select></lang-select></li>
         </ul>
       </div>

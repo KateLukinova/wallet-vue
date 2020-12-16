@@ -29,6 +29,7 @@ const About = Vue.component('About', require('./components/About.vue').default)
 const GoPro = Vue.component('GoPro', require('./components/GoPro.vue').default)
 const Huobi = Vue.component('Huobi', require('./components/Huobi.vue').default)
 const VpnPage = Vue.component('VpnPage', require('./components/VpnPage.vue').default)
+const News = Vue.component('News', require('./components/News.vue').default)
 const LinkBox = Vue.component('LinkBox', require('./components/LinkBox.vue').default)
 
 
@@ -40,7 +41,8 @@ const routes = [
   { path: '/about', component: About },
   { path: '/go-pro', component: GoPro },
   { path: '/vpn-page', component: VpnPage },
-  { path: '/huobi', component: Huobi }
+  { path: '/huobi', component: Huobi },
+  { path: '/news', component: News }
 ]
 
 const router = new VueRouter({

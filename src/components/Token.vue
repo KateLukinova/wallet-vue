@@ -113,12 +113,17 @@
         </div>
         <div class="column w-55">
           <div class="img">
-<!--            <img src="img/idea.png" alt="">-->
+              <img src="../assets/img/idea.png" alt="">
           </div>
         </div>
       </div>
     </section>
-    <bottom-block></bottom-block>
+    <section>
+      <div class="center-block">
+        <h6>We believe that programmable money such as <a href="#">stablecoins and DeFi coins</a> are new cryptocurrency tools that can completely change the way we make payments around the world ⚡️</h6>
+      </div>
+    </section>
+    <bottom-block-grey></bottom-block-grey>
     <m-footer></m-footer>
 
   </div>
@@ -129,7 +134,7 @@
   import MHeader from './MHeader.vue';
   import LinkBox from './LinkBox.vue';
   import SponsorsList from './SponsorsList.vue';
-  import BottomBlock from './BottomBlock.vue';
+  import BottomBlockGrey from './BottomBlockGrey.vue';
   import Tabs from 'vue-nav-tabs/dist/vue-tabs.js'
   import 'vue-nav-tabs/themes/vue-tabs.css'
 
@@ -139,7 +144,7 @@ export default {
     Tabs,
     LinkBox,
     SponsorsList,
-    BottomBlock
+    BottomBlockGrey
   },
 
   data() {

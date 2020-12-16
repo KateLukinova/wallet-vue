@@ -34,7 +34,7 @@
       </div>
     </section>
     <feedback-form></feedback-form>
-    <bottom-block></bottom-block>
+    <bottom-block-grey></bottom-block-grey>
     <m-footer></m-footer>
 
   </div>
@@ -45,14 +45,14 @@
   import MHeader from './MHeader.vue';
   import LinkBox from './LinkBox.vue';
   import FeedbackForm from './FeedbackForm.vue';
-  import BottomBlock from './BottomBlock.vue';
+  import BottomBlockGrey from './BottomBlockGrey.vue';
 
 export default {
   components: {
     MHeader,
     FeedbackForm,
     LinkBox,
-    BottomBlock
+    BottomBlockGrey
   },
 
   data() {
