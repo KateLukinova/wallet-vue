@@ -26,7 +26,7 @@
           </p>
         </div>
         <div class="column w-40" data-aos="fade-up">
-          <img src="img/ab.svg" alt="" style="max-width: 540px; width: 100%">
+          <img src="../assets/img/ab.svg" alt="" style="max-width: 540px; width: 100%">
         </div>
       </div>
     </section>

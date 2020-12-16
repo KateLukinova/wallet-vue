@@ -114,7 +114,7 @@
     background-color: #070E1E;
     position: relative;
     &:before {
-      //content: url("../img/cf.svg");
+      content: url("../assets/img/cf.svg");
       position: absolute;
       top: 0;
       left: 50%;

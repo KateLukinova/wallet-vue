@@ -90,10 +90,11 @@
 
     &:after {
       position: absolute;
-      //content: url("../img/oval-right.svg");
+      content: url("../assets/img/oval-right.svg");
       right: 0;
       bottom: -10px;
       z-index: 1;
+      width: 25vw;
     }
 
     h4 {

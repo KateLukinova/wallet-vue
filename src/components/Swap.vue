@@ -14,7 +14,7 @@
           <a href="https://tbcc.exchange/#/swap" class="m-btn">Try Now</a>
         </div>
         <div class="column justify-content-center align-items-center">
-<!--          <img src="img/swap-img.svg" alt="">-->
+          <img src="../assets/img/swap-img.svg" alt="">
         </div>
       </div>
     </section>
@@ -24,7 +24,7 @@
           <div class="text">
             <i style="font-style: normal" id="swapTextOne">Make instant swap transactions within the wallet, send assets to other wallet addresses at market prices</i>
 
-            <a href="https://tbcc.exchange/#/swap" class="m-btn" id="textButton">Try Now</a>
+            <a href="https://tbccswap.com/" class="m-btn" id="textButton">Try Now</a>
           </div>
         </div>
       </v-tab>
@@ -46,7 +46,7 @@
                   </clipPath>
                 </defs>
               </svg>
-              <i style="font-style: normal" id="swapUlOne">Create your own liquidity pools</i>
+              <i style="font-style: normal">Create your own liquidity pools</i>
             </div>
             <div class="item">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,14 +55,14 @@
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11 19C11.5523 19 12 19.4477 12 20C12 20.0019 12.0001 20.007 12.0034 20.018C12.0069 20.0298 12.0154 20.0521 12.0356 20.0851C12.0777 20.1543 12.1635 20.258 12.3242 20.3853C12.6516 20.6447 13.1879 20.9223 13.9417 21.174C15.4389 21.6738 17.5768 22 20 22C22.4232 22 24.5611 21.6738 26.0583 21.174C26.8121 20.9223 27.3484 20.6447 27.6758 20.3853C27.8365 20.258 27.9223 20.1543 27.9644 20.0851C27.9846 20.0521 27.993 20.0298 27.9966 20.018C27.9999 20.007 28 20.0019 28 20C28 19.4477 28.4477 19 29 19C29.5523 19 30 19.4477 30 20C30 20.8494 29.4868 21.502 28.9179 21.9528C28.3391 22.4115 27.5629 22.7802 26.6917 23.071C24.9389 23.6562 22.5768 24 20 24C17.4232 24 15.0611 23.6562 13.3083 23.071C12.4371 22.7802 11.6609 22.4115 11.0821 21.9528C10.5132 21.502 10 20.8494 10 20C10 19.4477 10.4477 19 11 19Z" fill="#FEDC5A"/>
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M11 12C11.5523 12 12 12.4477 12 13V27C12 27.0019 12.0001 27.007 12.0034 27.018C12.0069 27.0298 12.0154 27.0521 12.0356 27.0851C12.0777 27.1543 12.1635 27.258 12.3242 27.3853C12.6516 27.6447 13.1879 27.9223 13.9417 28.174C15.4389 28.6738 17.5768 29 20 29C22.4232 29 24.5611 28.6738 26.0583 28.174C26.8121 27.9223 27.3484 27.6447 27.6758 27.3853C27.8365 27.258 27.9223 27.1543 27.9644 27.0851C27.9846 27.0521 27.993 27.0298 27.9966 27.018C27.9999 27.007 28 27.0019 28 27V13.0001C28 12.4478 28.4477 12 29 12C29.5523 12 30 12.4477 30 13V27C30 27.8494 29.4868 28.502 28.9179 28.9528C28.3391 29.4115 27.5629 29.7802 26.6917 30.071C24.9389 30.6562 22.5768 31 20 31C17.4232 31 15.0611 30.6562 13.3083 30.071C12.4371 29.7802 11.6609 29.4115 11.0821 28.9528C10.5132 28.502 10 27.8494 10 27V13C10 12.4477 10.4477 12 11 12Z" fill="#FEDC5A"/>
               </svg>
-              <i style="font-style: normal" id="swapUlTwo">Add new tokens in 3 easy steps</i>
+              <i style="font-style: normal">Add new tokens in 3 easy steps</i>
             </div>
             <div class="item">
               <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fill-rule="evenodd" clip-rule="evenodd" d="M20 40C31.0457 40 40 31.0457 40 20C40 8.9543 31.0457 0 20 0C8.9543 0 0 8.9543 0 20C0 31.0457 8.9543 40 20 40Z" fill="#2BD7C0" fill-opacity="0.1"/>
                 <path d="M29.165 11.58C29.125 11.18 28.825 10.88 28.425 10.84C23.365 10.44 19.745 12.9 17.485 15.98C16.245 15.58 14.905 15.72 13.685 16.4C12.505 17.06 11.525 18.18 10.885 19.54C10.745 19.86 10.805 20.22 11.065 20.46C11.305 20.7 11.685 20.74 11.985 20.58C13.265 19.9 14.705 20.04 15.565 20.9L19.085 24.42L19.105 24.44C19.965 25.3 20.105 26.74 19.425 28.02C19.265 28.32 19.325 28.7 19.545 28.94C19.705 29.1 19.905 29.18 20.125 29.18C20.245 29.18 20.365 29.16 20.465 29.1C21.825 28.46 22.945 27.46 23.605 26.3C24.305 25.08 24.445 23.74 24.025 22.48C24.925 21.82 25.745 21.1 26.425 20.3C28.525 17.88 29.445 14.94 29.165 11.58ZM13.485 18.56C14.345 17.72 15.425 17.2 16.565 17.4C16.245 17.96 15.985 18.52 15.745 19.08C15.065 18.7 14.285 18.52 13.485 18.56ZM21.465 26.52C21.485 25.7 21.305 24.92 20.945 24.24C21.525 24 22.085 23.72 22.625 23.42C22.825 24.56 22.325 25.66 21.465 26.52ZM19.865 22.94L17.045 20.12C18.465 16.34 21.965 12.28 27.585 12.4C27.785 19.1 22.265 22 19.865 22.94ZM25.045 14.96C25.285 15.2 25.425 15.54 25.425 15.88C25.425 16.22 25.285 16.56 25.045 16.8C24.805 17.04 24.465 17.18 24.125 17.18C23.785 17.18 23.445 17.04 23.205 16.8C22.965 16.56 22.825 16.22 22.825 15.88C22.825 15.54 22.965 15.2 23.205 14.96C23.445 14.72 23.785 14.58 24.125 14.58C24.465 14.58 24.805 14.72 25.045 14.96ZM13.785 23.28C12.865 24.2 12.825 26.04 12.825 26.4C12.825 26.84 13.185 27.2 13.625 27.2H13.645C14.065 27.2 15.825 27.14 16.725 26.24C17.285 25.68 17.405 25.1 17.405 24.72C17.405 24.18 17.185 23.66 16.765 23.24C15.765 22.22 14.505 22.54 13.785 23.28ZM15.605 25.1C15.405 25.3 14.965 25.44 14.505 25.5C14.585 25.04 14.725 24.6 14.905 24.42C15.045 24.28 15.165 24.2 15.305 24.2C15.405 24.2 15.525 24.26 15.645 24.38C15.765 24.5 15.825 24.62 15.825 24.72C15.805 24.84 15.705 25 15.605 25.1Z" fill="#2BD7C0"/>
               </svg>
-              <i style="font-style: normal" id="swapUlThree">All you need is to connect your wallet, choose token, set a price and start trading</i>
+              <i style="font-style: normal">All you need is to connect your wallet, choose token, set a price and start trading</i>
             </div>
             <a href="https://tbcc.exchange/#/swap" class="m-btn">Try Now</a>
           </div>
@@ -199,21 +199,21 @@ export default {
       }
 
       &:nth-child(1) {
-        //background-image: url("../img/s1.svg");
+        background-image: url("../assets/img/s1.svg");
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: contain;
       }
 
       &:nth-child(2) {
-        //background-image: url("../img/s2.svg");
+        background-image: url("../assets/img/s2.svg");
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: contain;
       }
 
       &:nth-child(3) {
-        //background-image: url("../img/s3.svg");
+        background-image: url("../assets/img/s3.svg");
         background-repeat: no-repeat;
         background-position: bottom right;
         background-size: contain;
@@ -233,7 +233,7 @@ export default {
 
   @media (max-width: 990px) {
     .vue-tabs .nav>li span.title {
-      font-size: 20px;
+      font-size: 16px;
     }
 
     .swap-page .tab_item {

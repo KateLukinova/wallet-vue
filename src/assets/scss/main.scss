@@ -543,6 +543,7 @@ span.color-green {
         -o-transition: all 0.5s ease;
         transition: all 0.5s ease;
         cursor: pointer;
+        margin-bottom: 16px;
 
         &:hover {
           background: -o-linear-gradient(349.78deg, #0066FF 0%, #2CE0C5 100%);
@@ -915,6 +916,16 @@ span.color-green {
       bottom: -175px;
     }
   }
+  .tabs-wrapper .nav-tabs-navigation {
+
+    .nav-pills {
+      .tab a {
+        padding: 8px;
+        font-size: 12px;
+        margin-right: 6px;
+      }
+    }
+  }
 }
 
 @media (max-width: 990px) {
@@ -1221,14 +1232,6 @@ span.color-green {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-
-    .nav-pills {
-      .tab a {
-        padding: 15px;
-        font-size: 14px;
-        margin-right: 6px;
-      }
-    }
   }
 
   .column.padd-top .link-box {
@@ -1249,6 +1252,8 @@ span.color-green {
 
     a {
       margin-right: 0;
+      margin-bottom: 16px;
+      margin-left: 0;
     }
   }
 

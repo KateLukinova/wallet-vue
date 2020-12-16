@@ -87,8 +87,7 @@
               <div class="two-block mobile-column-reverse">
                 <div class="column aos-init aos-animate" data-aos="fade-left">
                   <div class="img">
-                    <img src="../assets/img/tail1.svg" alt="">
-<!--                    <img src="../assets/img/Items.png" alt="">-->
+                    <img src="../assets/img/Item2.svg" alt="">
                   </div>
                 </div>
                 <div class="column aos-init aos-animate padd-top" data-aos="fade-up">
@@ -138,7 +137,6 @@
               <div class="two-block mobile-column-reverse">
                 <div class="column aos-init aos-animate" data-aos="fade-left">
                   <div class="img">
-                      <img src="../assets/img/Item2.svg" alt="">
                     <img src="../assets/img/tail1.svg" alt="">
                   </div>
                 </div>
@@ -183,7 +181,7 @@
               <div class="two-block mobile-column-reverse">
                 <div class="column aos-init aos-animate" data-aos="fade-left">
                   <div class="img">
-<!--                    <img src="img/Item3.svg" alt="">-->
+                    <img src="../assets/img/Item3.svg" alt="">
                   </div>
                 </div>
                 <div class="column aos-init aos-animate padd-top" data-aos="fade-up">
@@ -225,7 +223,7 @@
               <div class="two-block mobile-column-reverse">
                 <div class="column aos-init aos-animate" data-aos="fade-left">
                   <div class="img">
-<!--                    <img src="img/Item4.svg" alt="">-->
+                    <img src="../assets/img/Item4.svg" alt="">
                   </div>
                 </div>
                 <div class="column aos-init aos-animate padd-top" data-aos="fade-up">
