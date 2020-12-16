@@ -4,7 +4,7 @@
       <div class="column aos-init aos-animate founded" data-aos="fade-up">
 <!--        <img src="img/Pics.svg" alt="" class="before">-->
         <div class="text">
-          <h2 id="mainCaptionSeven">We are always open to dialogue</h2>
+          <h2 id="mainCaptionSeven">We are always happy to answer all your questions and reply to your suggestions</h2>
         </div>
         <div class="val-box">
           <div class="val-item">
@@ -14,10 +14,10 @@
             <i style="font-style: normal" id="mainUlItemTwo">Number of users</i> <span>40 000+</span>
           </div>
           <div class="val-item">
-            <i style="font-style: normal" id="mainUlItemThree">TBCC Token purchases</i> <span>26 214</span>
+            <i style="font-style: normal" id="mainUlItemThree">TBCC Token purchases</i> <span>126 726</span>
           </div>
           <div class="val-item">
-            <i style="font-style: normal" id="mainUlItemFour">Digital Assets</i> <span>100+</span>
+            <i style="font-style: normal" id="mainUlItemFour">Digital Assets</i> <span>150 +</span>
           </div>
         </div>
       </div>
@@ -34,7 +34,7 @@
           <div class="form-group">
             <input id="contact-form-message" type='text' name="message" placeholder="Message">
           </div>
-          <button type="submit" class="m-btn mt-5 form-button" id="contacts-button">Get in Touch</button>
+          <button type="submit" class="m-btn mt-5 form-button" id="contacts-button">Send</button>
         </form>
       </div>
     </div>

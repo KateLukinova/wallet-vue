@@ -74,15 +74,15 @@
       </div>
       <div class="column column-right">
         <div class="footer-nav">
-          <a href="#" class="nav-caption">TBCC Wallet</a>
-          <a href="#">Wallet</a>
-          <a href="#">Token</a>
-          <a href="#">Swap</a>
+          <router-link to="/" class="nav-caption">TBCC Wallet</router-link>
+          <router-link to="/">Wallet</router-link>
+          <router-link to="/token">Token</router-link>
+          <router-link to="swap">Swap</router-link>
         </div>
         <div class="footer-nav">
           <a href="#" class="nav-caption">Information</a>
-          <a href="#">About</a>
-          <a href="#" class="a-title">Academy</a>
+          <router-link to="/about" href="#">About</router-link>
+          <router-link to="/academy">Academy</router-link>
         </div>
         <div class="footer-nav">
           <a href="#" class="nav-caption">Information</a>

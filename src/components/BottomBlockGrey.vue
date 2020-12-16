@@ -21,7 +21,7 @@
        <router-link to="/go-pro" class="black-button">Purchase PRO ⚡️</router-link>
      </div>
      <h4>
-       Buy, Trade, Manage, and Exchange cryptocurrency on your mobile phone in any time
+       Buy, store, send, trade, exchange and earn your cryptocurrency with an easy-to-use and convinient wallet.
      </h4>
      <link-box></link-box>
    </section>

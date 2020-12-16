@@ -53,15 +53,17 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 20px;
-        color: #28AA9A;
+        color: white;
         text-align: center;
-        border: 2px solid #28AA9A;
+        border: 1px solid white;
         border-radius: 4px;
-        background-color: white;
+        background-color: transparent;
         cursor: pointer;
       }
     }
     .dropMenu {
+      background-color: #070E1E!important;
+      border: 1px solid white!important;
       padding: 10px!important;
       right: 10px;
       top: 35px!important;
@@ -77,9 +79,9 @@
           line-height: 20px;
           display: flex;
           align-items: center;
-          color: #28AA9A;
+          color: white;
           &.active {
-            color: black;
+            color: #070E1E;
           }
         }
       }

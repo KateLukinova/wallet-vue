@@ -7,8 +7,7 @@
       <div class="center-block">
         <h2>About TBCC</h2>
         <p>
-          TBCC token, as a utility token, facilitates the adoption, use, and distribution of stablecoins, Open Finance, cryptocurrencies, and DeFi solutions. TBCC token - a token is a new type of digital
-          asset issued by the TBCC WALLET service
+          TBCC token is a digital asset that was issued by TBCC Wallet team. You can invest in TBCC tokens, trade them on different exchanges, send them to other users. TBCC tokens work smoothly with BEP8 and ERC-20 protocols.
         </p>
       </div>
     </section>
@@ -17,15 +16,13 @@
         <div class="column w-60" data-aos="fade-up">
           <h2 class="big-h2">TBCC Wallet</h2>
           <p class="black-p">
-            TBCC Wallet is a non-custodial mobile cryptocurrency wallet managed by a team of developers in 2019. The wallet allows users to access, store, send or receive BTC, ETH and all DeFi-project coins. Users manage their accounts through their smartphones.
-            We are constantly adapting our wallet to the growing needs of cryptocurrency users. TBCC wallet has
-            a great interface that makes it easy to use.
+            TBCC Wallet is a modern mobile app developed for cryptoassets management. It was created by a group of developers with extensive experience in blockchain in 2019. Our wallet allows users from all over the world to make various operations with their cryptoassets. You can store your savings, trade them on various exchanges, send them to other wallet addresses, receive tokens from other users. TBCC Wallet supports leading cryptocurrencies based on BEP2, BEP8, ERC-20 protocols. In addition to the classic wallet functions, TBCC Wallet allows its users to participate in DeFi projects, SWAP, OTC. We are constantly updating our mobile application and expanding its capabilities in order to make it as convenient and beneficial to use as possible. Our main goal is to empower millions of people to use and work with cryptoassets. Even a beginner can easily get started with crypto thanks to our easy-to-use application with a user-friendly interface.
           </p>
           <p class="black-p">
-            The TBCC wallet will give you complete control over your funds
+            TBCC Wallet is completely secure.
           </p>
           <p class="black-p">
-            The security architecture of the blockchain wallet has been improved with advanced authentication methods to prevent unauthorized access.
+            The security architecture of the blockchain wallet has been improved with advanced authentication methods to prevent unauthorized access. Only you have control over your cryptoassets.
           </p>
         </div>
         <div class="column w-40" data-aos="fade-up">
