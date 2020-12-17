@@ -21,6 +21,27 @@
             </div>
           </div>
         </div>
+        <div class="vote-progress">
+          <div class="vote-progress-head">
+            <h3>Vote Deadline</h3>
+            <div class="text">
+              <p>It remains to collect</p>
+              <svg width="20" height="31" viewBox="0 0 20 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M13.1365 9.49983C13.1365 5.06801 11.0002 1.24983 9.36381 -0.000172121C9.36381 -0.000172121 9.25017 -0.0683539 9.25017 0.113464C9.11381 8.68165 4.7729 11.0226 2.36381 14.1362C-3.15892 21.3635 1.97745 29.2726 7.20472 30.7271C10.1365 31.5453 6.5229 29.2726 6.06835 24.4998C5.5229 18.7044 13.1365 14.2953 13.1365 9.49983Z" fill="#282E5B"/>
+                  <path d="M16.0002 12.4321C15.9775 12.4094 15.932 12.4094 15.8866 12.4321C15.8866 12.4321 15.8866 12.4321 15.8638 12.4548C15.7729 13.523 14.5911 15.8412 13.1138 17.9548C8.0911 25.1366 10.9547 28.5912 12.5684 30.4548C13.5002 31.5457 12.5684 30.4548 14.9093 29.3412C15.0911 29.2503 19.4547 26.9321 19.932 21.6821C20.4093 16.5684 17.1593 13.3639 16.0002 12.4321Z" fill="#059BDC"/>
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <rect width="20" height="30.8864" fill="white"/>
+                  </clipPath>
+                </defs>
+              </svg>
+              <span>45,000,000 HT</span>
+              <a href="#">Winner Prize</a>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <section class="huobi-body">
@@ -192,29 +213,19 @@
       <div class="center-block" style="margin-top: 0; padding-top: 0">
         <h2>Voting Rules</h2>
       </div>
-<!--      <div class="accordion">-->
-<!--        <div class="accordion-item">-->
-<!--          <div class="question" @click="isAnswerShow = !isAnswerShow">-->
-<!--            Who can vote?-->
-<!--            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">-->
-<!--              <path v-bind:class="{ show: isAnswerShow }" d="M12 24C11.6892 24 11.3911 23.8765 11.1714 23.6568C10.9516 23.437 10.8281 23.1389 10.8281 22.8281V1.17188C10.8281 0.861074 10.9516 0.563003 11.1714 0.343234C11.3911 0.123465 11.6892 0 12 0C12.3108 0 12.6089 0.123465 12.8286 0.343234C13.0484 0.563003 13.1719 0.861074 13.1719 1.17188V22.8281C13.1719 23.1389 13.0484 23.437 12.8286 23.6568C12.6089 23.8765 12.3108 24 12 24Z" fill="#6C6C78"/>-->
-<!--              <path d="M22.8281 13.1719H1.17188C0.861074 13.1719 0.563003 13.0484 0.343234 12.8286C0.123465 12.6089 0 12.3108 0 12C0 11.6892 0.123465 11.3911 0.343234 11.1714C0.563003 10.9516 0.861074 10.8281 1.17188 10.8281H22.8281C23.1389 10.8281 23.437 10.9516 23.6568 11.1714C23.8765 11.3911 24 11.6892 24 12C24 12.3108 23.8765 12.6089 23.6568 12.8286C23.437 13.0484 23.1389 13.1719 22.8281 13.1719Z" fill="#6C6C78"/>-->
-<!--            </svg>-->
-<!--          </div>-->
-<!--          <div class="answer" v-bind:class="{ show: isAnswerShow }">-->
-<!--            <p>Text information</p>-->
-<!--          </div>-->
-<!--        </div>-->
-<!--      </div>-->
-
       <div class="accordion">
         <div class="accordion-item" v-for="faq in faqs">
-          <div class="question">
-            <div class="plus-icon" v-bind:class="{ minus: faq.open }"  @click="(faq.open = !faq.open)"> {{faq.question}}}</div>
-            <h3 v-text="faq.name" @click="(faq.open = !faq.open)"></h3>
+          <div class="question" @click="(faq.open = !faq.open)">
+            <span>{{faq.question}}</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <transition name="fade">
+                <path v-if="!faq.open" d="M12 24C11.6892 24 11.3911 23.8765 11.1714 23.6568C10.9516 23.437 10.8281 23.1389 10.8281 22.8281V1.17188C10.8281 0.861074 10.9516 0.563003 11.1714 0.343234C11.3911 0.123465 11.6892 0 12 0C12.3108 0 12.6089 0.123465 12.8286 0.343234C13.0484 0.563003 13.1719 0.861074 13.1719 1.17188V22.8281C13.1719 23.1389 13.0484 23.437 12.8286 23.6568C12.6089 23.8765 12.3108 24 12 24Z" fill="#6C6C78"/>
+              </transition>
+              <path d="M22.8281 13.1719H1.17188C0.861074 13.1719 0.563003 13.0484 0.343234 12.8286C0.123465 12.6089 0 12.3108 0 12C0 11.6892 0.123465 11.3911 0.343234 11.1714C0.563003 10.9516 0.861074 10.8281 1.17188 10.8281H22.8281C23.1389 10.8281 23.437 10.9516 23.6568 11.1714C23.8765 11.3911 24 11.6892 24 12C24 12.3108 23.8765 12.6089 23.6568 12.8286C23.437 13.0484 23.1389 13.1719 22.8281 13.1719Z" fill="#6C6C78"/>
+            </svg>
           </div>
           <transition name="fade">
-            <div class="p-block" v-html="faq.answer" v-show="faq.open"></div>
+            <div class="answer" v-html="faq.answer" v-if="faq.open"></div>
           </transition>
         </div>
       </div>
@@ -240,27 +251,25 @@
       return {
         faqs: [
           {
-            question: "Обратная связь",
-            answer: "" +
-              "<p>Реклама в сетях показывается на сайтах, в мобильных приложениях и на других ресурсах, входящих в партнерскую сеть рекламных систем. Ее можно назвать дополнительной информацией к содержанию страниц, которые просматривает человек. Хотя для показа объявлений пользователь не вводит конкретный запрос</p>" +
-              "<ul class='text-ul'>" +
-              "<li>Мог интересоваться вашими товарами / услугами ранее;\n</li>" +
-              "<li>Прямо сейчас находится на сайте, который относится к вашей тематике.\n</li>" +
-              "</ul>" +
-              "<p>В этом главное отличие рекламы в сетях от поисковой. В поиске мы рекламируемся по конкретным ключевым запросам (прорабатываем семантику сами или доверяем эту работу рекламной системе, выбирая автотаргетинг). Запуская рекламу в сетях, мы таргетируемся (нацеливаемся) на пользователей, которые прямо сейчас не ищут товар / услугу, но так или иначе проявили интерес к тому, что мы рекламируем. У каждой рекламной системы своя сеть партнерских сайтов:</p>"
-            ,
+            question: "Who can vote?",
+            answer: 'Text information',
             open: false
           },
 
           {
-            question: "Заголовок",
-            answer: "kdlfgdffgdfgd",
+            question: "How is the winner of the vote determined?",
+            answer: "Text information",
             open: false
           },
 
           {
-            question: "Заголовок",
-            answer: "kdlfgdffgdfgd",
+            question: "What is the voting period?",
+            answer: "Text information",
+            open: false
+          },
+          {
+            question: "Who is involved in receiving rewards from a winning coin?",
+            answer: "Text information",
             open: false
           }
         ]
@@ -286,17 +295,6 @@
     }
   }
 
-  .main-go {
-    position: relative;
-    &:before {
-      /*content: url("../img/go-main-oval.svg");*/
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-    }
-  }
-
   .m-btn.text-black {
     margin-bottom: 56px;
   }
@@ -306,6 +304,61 @@
 
     @media (max-width: 1200px) {
       margin-top: 80px;
+    }
+  }
+
+  .vote-progress {
+    width: 90%;
+    max-width: 1464px;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%, 50%);
+    background: #FFFFFF;
+    box-shadow: 0 52px 54px rgba(1, 105, 254, 0.1);
+    border-radius: 10px;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .vote-progress-head {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        font-family: 'Golos-Regular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 1.1;
+        color: #000000;
+      }
+
+      .text {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        font-family: 'Golos-Regular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 1.7;
+        p {
+          color: #000000;
+        }
+        svg {
+          margin: 0 15px;
+        }
+        span {
+          font-weight: bold;
+        }
+        a {
+          margin-left: 30px;
+        }
+      }
     }
   }
 
@@ -750,6 +803,7 @@
     display: flex;
     flex-direction: column;
     margin: auto;
+    padding-bottom: 120px;
 
     .accordion-item {
       display: flex;
@@ -769,9 +823,10 @@
         font-size: 20px;
         line-height: 1.2;
         color: #000000;
+        cursor: pointer;
 
         path {
-          transition: all 0.3s ease;
+          transition: all 0.5s ease;
         }
 
         path.show {
@@ -779,40 +834,19 @@
         }
       }
       .answer {
-        height: 0;
-        transition: height 0.5s ease;
         padding: 2px 0;
         box-sizing: border-box;
-
-        p {
-          font-family: 'Golos-Regular', sans-serif;
-          font-style: normal;
-          font-weight: normal;
-          font-size: 16px;
-          line-height: 1.2;
-          color: #444A53;
-          margin-top: 20px;
-          transition: all 0.1s ease;
-          clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-        }
-
-        &.show {
-          height: max-content;
-          p {
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-          }
-        }
+        font-family: 'Golos-Regular', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 1.2;
+        color: #444A53;
+        margin-top: 20px;
+        transition: all 0.5s ease;
       }
     }
   }
-
-
-
-
-  @media (max-width: 1300px) {
-
-  }
-
 
   @media (max-width: 1200px) {
     .huobi-body .center-block {
@@ -896,6 +930,21 @@
 
     .huobi-body .two-block .text-block p {
       font-size: 15px;
+    }
+  }
+
+  .bounce-enter-active {
+    animation: fade-in 0.5s;
+  }
+  .bounce-leave-active {
+    animation: fade-in 0.5s reverse;
+  }
+  @keyframes fade-in {
+    0% {
+      clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    100% {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     }
   }
 

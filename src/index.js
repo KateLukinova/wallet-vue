@@ -31,6 +31,7 @@ const Huobi = Vue.component('Huobi', require('./components/Huobi.vue').default)
 const VpnPage = Vue.component('VpnPage', require('./components/VpnPage.vue').default)
 const News = Vue.component('News', require('./components/News.vue').default)
 const Academy = Vue.component('Academy', require('./components/Academy.vue').default)
+const Team = Vue.component('Team', require('./components/Team.vue').default)
 const LinkBox = Vue.component('LinkBox', require('./components/LinkBox.vue').default)
 
 
@@ -44,7 +45,8 @@ const routes = [
   { path: '/vpn-page', component: VpnPage },
   { path: '/huobi', component: Huobi },
   { path: '/news', component: News },
-  { path: '/academy', component: Academy }
+  { path: '/academy', component: Academy },
+  { path: '/team', component: Team }
 ]
 
 const router = new VueRouter({

@@ -46,11 +46,11 @@
               Swap
             </router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/huobi">
-              Huobi
-            </router-link>
-          </li>
+<!--          <li class="nav-item">-->
+<!--            <router-link class="nav-link" to="/huobi">-->
+<!--              Huobi-->
+<!--            </router-link>-->
+<!--          </li>-->
           <li class="nav-item">
             <router-link class="nav-link" to="/vpn-page">
               VPN

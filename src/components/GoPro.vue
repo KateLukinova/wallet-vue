@@ -16,7 +16,7 @@
         <div class="two-block mobile-column-reverse">
           <div class="column" data-aos="fade-left">
             <div class="img">
-              <!--            <img src="img/tail56.svg" alt="">-->
+              <img src="../assets/img/tail56.svg" alt="">
             </div>
           </div>
           <div class="column aos-init aos-animate" data-aos="fade-up">
@@ -54,7 +54,7 @@
           </div>
           <div class="column">
             <div class="img">
-              <!--            <img src="img/tail57.svg" alt="">-->
+              <img src="../assets/img/tail57.svg" alt="">
             </div>
           </div>
         </div>
@@ -64,7 +64,7 @@
       <div class="two-block">
         <div class="column w-60">
           <div class="img">
-            <!--          <img src="img/go-img1.svg" alt="">-->
+            <img src="../assets/img/go-img1.svg" alt="">
           </div>
         </div>
         <div class="column w-40">
@@ -99,7 +99,7 @@
         </div>
         <div class="column">
           <div class="img">
-            <!--          <img src="img/idea2.png" alt="">-->
+            <img src="../assets/img/idea2.png" alt="">
           </div>
         </div>
       </div>
@@ -134,7 +134,7 @@ export default {
 };
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
 
   .main-go .main-page {
@@ -184,7 +184,7 @@ export default {
   .main-go {
     position: relative;
     &:before {
-      /*content: url("../img/go-main-oval.svg");*/
+      content: url("../assets/img/go-main-oval.svg");
       position: absolute;
       top: 50%;
       left: 0;

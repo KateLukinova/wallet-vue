@@ -62,8 +62,6 @@
       }
     }
     .dropMenu {
-      background-color: #070E1E!important;
-      border: 1px solid white!important;
       padding: 10px!important;
       right: 10px;
       top: 35px!important;
@@ -79,7 +77,7 @@
           line-height: 20px;
           display: flex;
           align-items: center;
-          color: white;
+          color: #909399;
           &.active {
             color: #070E1E;
           }
