@@ -9,13 +9,13 @@
           <h2>TBCC Token</h2>
           <h3>What is TBCC Token?</h3>
           <p>
-            TBCC token is a digital asset that was issued by TBCC Wallet team. You can invest in TBCC tokens, trade them on different exchanges, send them to other users. TBCC tokens work smoothly with BEP8 and ERC-20 protocols.
+            TBCC token is a digital asset that was issued by TBCC Wallet team. You can invest in TBCC tokens, trade them on different exchanges, send them to other users. TBCC tokens work smoothly with BEP8, BEP2 and ERC-20 protocols.
           </p>
           <a href="https://www.binance.org/en/trade/mini/TBCC-BA1M_BNB"
              class="m-btn mb-3">Try Now</a>
         </div>
         <div class="column justify-content-center align-items-center">
-<!--          <img src="img/token.svg" alt="">-->
+          <img src="../assets/img/token.svg" alt="">
         </div>
       </div>
     </section>

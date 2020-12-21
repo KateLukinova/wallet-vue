@@ -17,7 +17,7 @@
         </defs>
       </svg>
     </a>
-    <a href="http://101.200.191.88/tbccwallet.apk">
+    <a href="https://hkapi.tbcc.tech/update/tbccwallet.apk">
       <svg width="209" height="66" viewBox="0 0 209 66" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="209" height="66" fill="url(#pattern0)"/>
         <rect x="11" y="8" width="188" height="51" fill="black"/>

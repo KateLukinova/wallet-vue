@@ -7,7 +7,7 @@
       <section class="main-page">
         <div class="center-block go-center">
           <h2>Try the first decentralized <span class="color-green">blockchain-based VPN.</span> <br>Even a supercomputer will not get<br> an acсess to your data</h2>
-          <a href="#"
+          <a href="http://101.200.191.88/vpn/TBCCVPN-armv7-latest/"
              class="m-btn text-black" style="min-width: 230px; font-weight: bold">
             Get the app
             <i>.apk</i>
@@ -26,7 +26,7 @@
               <h2 class="vpn-caption">New era of safety</h2>
               <p class="vpn-p">TBCC VPN is based on Cellframe platform. Instead of other VPN, we implement quantum-safe cryptography that protects all your operation and information. TBCC VPN is completely anonymous due to multiple routing.
               </p>
-              <a href="https://www.binance.org/en/trade/mini/TBCC-BA1M_BNB"
+              <a href="http://101.200.191.88/vpn/TBCCVPN-armv7-latest/"
                  class="m-btn mt-5" style="min-width: 230px; font-weight: bold">
                 Get the app
                 <i>.apk</i>
@@ -110,7 +110,7 @@
               <p class="vpn-p">
                 Get unlimited access to music, social media, videos, apps, and to many internet resources from any place in the world. Forget about geo-blocks and enjoy the Internet without cyber borders.
               </p>
-              <a href="https://www.binance.org/en/trade/mini/TBCC-BA1M_BNB"
+              <a href="http://101.200.191.88/vpn/TBCCVPN-armv7-latest/"
                  class="m-btn mt-5" style="min-width: 230px; font-weight: bold">
                 Get the app
                 <i>.apk</i>
@@ -150,7 +150,7 @@
             <div class="number">1</div>
             <span>
                 To begin working with TBCC VPN you have to download the app (currently available for Android only)
-                <a href="http://101.200.191.88/tbccwallet.apk">
+                <a href="https://hkapi.tbcc.tech/update/tbccwallet.apk">
       <svg width="209" height="66" viewBox="0 0 209 66" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="209" height="66" fill="url(#pattern0)"/>
         <rect x="11" y="8" width="188" height="51" fill="black"/>

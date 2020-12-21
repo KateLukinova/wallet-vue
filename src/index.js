@@ -11,6 +11,10 @@ import './assets/scss/main.scss'
 window.Vue = require('vue')
 import vSelect from 'vselect-component'
 import VueRouter from "vue-router";
+import Vue from 'vue'
+import { i18n } from './plugins/i18n.js'
+
+
 
 Vue.use(VueRouter)
 Vue.use(vSelect)
@@ -32,6 +36,7 @@ const VpnPage = Vue.component('VpnPage', require('./components/VpnPage.vue').def
 const News = Vue.component('News', require('./components/News.vue').default)
 const Academy = Vue.component('Academy', require('./components/Academy.vue').default)
 const Team = Vue.component('Team', require('./components/Team.vue').default)
+const Contacts = Vue.component('Contacts', require('./components/Contacts.vue').default)
 const LinkBox = Vue.component('LinkBox', require('./components/LinkBox.vue').default)
 
 
@@ -46,15 +51,20 @@ const routes = [
   { path: '/huobi', component: Huobi },
   { path: '/news', component: News },
   { path: '/academy', component: Academy },
-  { path: '/team', component: Team }
+  { path: '/team', component: Team },
+  { path: '/contacts', component: Contacts }
 ]
 
 const router = new VueRouter({
-  routes // сокращённая запись для `routes: routes`
+  routes,
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  }
 })
 
 // Vue init
 const app = new Vue({
   router,
-  mode: 'history',
+  i18n,
+  mode: 'history'
 }).$mount('#app')

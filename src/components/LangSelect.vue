@@ -1,5 +1,5 @@
 <template>
-  <v-select v-model="selected" :option="options" class="my-v-select"></v-select>
+  <v-select v-model="selected" :option="options" :on-change="changeLang" class="my-v-select"></v-select>
 </template>
 
 <script>
@@ -22,15 +22,28 @@
             value: 2,
             label: 'EN'
           },
-          {
-            value: 3,
-            label: 'CH'
-          }
+          // {
+          //   value: 3,
+          //   label: 'CH'
+          // }
         ],
         selected: {
-          value: 3,
-          label: 'CH'
+          value: 2,
+          label: 'EN'
         }
+      }
+    },
+
+    methods: {
+      changeLang: function () {
+        this.$i18n.locale = this.selected.label.toLowerCase();
+        console.log(this.selected.label.toLowerCase())
+      }
+    },
+
+    watch:{
+      'selected'  : function (val, oldval) {
+        this.changeLang();
       }
     }
   }

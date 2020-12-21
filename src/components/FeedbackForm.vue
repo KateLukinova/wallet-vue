@@ -2,39 +2,54 @@
   <section>
     <div class="two-block">
       <div class="column aos-init aos-animate founded" data-aos="fade-up">
-<!--        <img src="img/Pics.svg" alt="" class="before">-->
+        <img src="../assets/img/Pics.svg" alt="" class="before">
         <div class="text">
-          <h2 id="mainCaptionSeven">We are always happy to answer all your questions and reply to your suggestions</h2>
+          <h2>{{ $t('mainCaptionSeven') }}</h2>
         </div>
         <div class="val-box">
           <div class="val-item">
-            <i style="font-style: normal" id="mainUlItemOne">Founded in</i> <span>2019</span>
+            <i style="font-style: normal">{{ $t('mainUlItemOne') }}</i> <span>2019</span>
           </div>
           <div class="val-item">
-            <i style="font-style: normal" id="mainUlItemTwo">Number of users</i> <span>40 000+</span>
+            <i style="font-style: normal">{{ $t('mainUlItemTwo') }}</i> <span>40 000+</span>
           </div>
           <div class="val-item">
-            <i style="font-style: normal" id="mainUlItemThree">TBCC Token purchases</i> <span>126 726</span>
+            <i style="font-style: normal">{{ $t('mainUlItemThree') }}</i> <span>126 726</span>
           </div>
           <div class="val-item">
-            <i style="font-style: normal" id="mainUlItemFour">Digital Assets</i> <span>150 +</span>
+            <i style="font-style: normal">{{ $t('mainUlItemFour') }}</i> <span>150 +</span>
           </div>
         </div>
       </div>
       <div class="column aos-init aos-animate form-column" data-aos="fade-up">
-        <form class="contact-form" action="#" method="post">
+        <form class="contact-form" @submit.prevent="processForm">
           <div class="form-group">
-            <input type="text" id="contact-form-f-name" name="your_name" placeholder="Your name">
+            <input type="text"
+                   id="contact-form-f-name"
+                   name="your_name"
+                   placeholder="Your name"
+                   v-model="name"
+            >
           </div>
 
           <div class="form-group">
-            <input type="email" id="contact-form-email" name="email" placeholder="Email address">
+            <input type="email"
+                   id="contact-form-email"
+                   name="email"
+                   placeholder="Email address"
+                   v-model="email"
+            >
           </div>
 
           <div class="form-group">
-            <input id="contact-form-message" type='text' name="message" placeholder="Message">
+            <input id="contact-form-message"
+                   type='text'
+                   name="message"
+                   placeholder="Message"
+                   v-model="message"
+            >
           </div>
-          <button type="submit" class="m-btn mt-5 form-button" id="contacts-button">Send</button>
+          <button type="submit" class="m-btn mt-5 form-button" id="contacts-button">{{ $t('textFormButton') }}</button>
         </form>
       </div>
     </div>
@@ -42,12 +57,32 @@
 </template>
 
 <script>
+  import axios from 'axios';
 
   export default {
 
     data() {
       return {
-
+        name: '',
+        email: '',
+        message: ''
+      }
+    },
+    methods: {
+      processForm: function() {
+        const options = {
+          method: 'POST',
+          headers: { 'content-type': 'application/form-data' },
+          data: {your_name: this.name, email: this.email, messages: this.message},
+          url: 'form_processing.php',
+        };
+        axios(options).then(response => {
+            if (response.data) {
+              alert(response.data);
+            } else {
+              alert('Успех');
+            }
+        });
       }
     }
   }

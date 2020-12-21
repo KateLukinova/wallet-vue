@@ -11,7 +11,7 @@
           <p>
             TBCC SWAP provides users with the ability to quickly exchange their cryptoassets quickly on the base of UNISWAP protocol. Any user can add or remove liquidity using the easy-to-use TBCC SWAP interface. The main mission of TBCC SWAP is to provide users from all over the world with the ability of quick and easy seamless trading.
           </p>
-          <a href="https://tbcc.exchange/#/swap" class="m-btn">Try Now</a>
+          <a href="https://tbccswap.com/#/" class="m-btn">Try Now</a>
         </div>
         <div class="column justify-content-center align-items-center">
           <img src="../assets/img/swap-img.svg" alt="">

@@ -8,7 +8,7 @@
         <div class="column">
           <div class="text-block">
             <h2>TBCC Academy</h2>
-            <h3>Start learning about crypto & make your first steps 🔥</h3>
+            <h3>Learn more about crypto terms and start to make your first steps</h3>
           </div>
         </div>
         <div class="column">
@@ -85,6 +85,7 @@ export default {
         font-size: 36px;
         line-height: 1.5;
         color: #080F1F;
+        text-align: left;
       }
     }
   }

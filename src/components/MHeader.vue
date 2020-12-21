@@ -33,17 +33,17 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <router-link to="/main" class="nav-link">
-              Wallet
+              {{ $t('menuItemOne') }}
             </router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/token">
-              Token
+              {{ $t('menuItemTwo') }}
             </router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/swap">
-              Swap
+              {{ $t('menuItemThree') }}
             </router-link>
           </li>
 <!--          <li class="nav-item">-->
@@ -53,19 +53,19 @@
 <!--          </li>-->
           <li class="nav-item">
             <router-link class="nav-link" to="/vpn-page">
-              VPN
+              {{ $t('menuItemFive') }}
             </router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" to="/about">
-              About
+              {{ $t('menuItemSix') }}
             </router-link>
           </li>
-          <li class="nav-item">
-            <router-link class="nav-link" to="/news">
-              News
-            </router-link>
-          </li>
+<!--          <li class="nav-item">-->
+<!--            <router-link class="nav-link" to="/news">-->
+<!--              News-->
+<!--            </router-link>-->
+<!--          </li>-->
           <li><lang-select></lang-select></li>
         </ul>
       </div>

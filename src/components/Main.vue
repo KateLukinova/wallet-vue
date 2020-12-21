@@ -7,24 +7,24 @@
       <section class="main-page">
         <div class="text-block">
           <h1>
-            Best Crypto <span class="color-blue">Wallet</span><br>
-            for Decentralized <span class="color-green">Finance</span>
+            {{ $t('mainH1') }}
           </h1>
-          <p data-aos="fade-up">
-            Buy, store, send, exchange your cryptocurrency with an easy-to-use and convinient wallet.
+          <p>
+            {{ $t('mainDopText') }}
           </p>
           <link-box></link-box>
           <p class="sponsors-text" id="mainNextText" style="display: block">
-            Get a special bonus for joining PRO account! Enter promo-code
+            {{ $t('testingCodeBefore') }}
             <span>
               <a href="#"
+                 @click.stop.prevent="copyTestingCode"
                  class="copy-text"
-                 @click="clipboardHandler"
-                 tooltip="Click to Copy">TBCCPRO</a>
-            </span>.
-            when you activate your PRO account in order to get a special bonus. Just copy the code and paste it when you log in the TBCC Wallet app.
+                 id="testing-code"
+                 tooltip="Click to Copy">{{ testingCode }}</a>
+            </span>
+            {{ $t('testingCodeAfter') }}
           </p>
-          <p class="sponsors-text" id="mainPBlockTwo">We support leading cryptocurrencies. All your favourite assets in one place.</p>
+          <p class="sponsors-text">{{ $t('mainPBlockTwo') }}</p>
           <sponsors-list></sponsors-list>
         </div>
         <div class="img-block" data-aos="fade-left" data-aos-delay="900">
@@ -36,7 +36,7 @@
       <div class="center-block">
         <div class="aos-init aos-animate" data-aos="fade-up">
           <div class="text">
-            <h2 id="mainCaptionOne">Multifunctional wallet</h2>
+            <h2>{{ $t('mainCaptionOne') }}</h2>
           </div>
         </div>
         <div class="advantages-block">
@@ -47,8 +47,8 @@
               <path fill-rule="evenodd" clip-rule="evenodd" d="M34.5 19.125C35.4434 19.125 36.2083 19.8898 36.2083 20.8333V48.1667C36.2083 49.1102 35.4434 49.875 34.5 49.875C33.5565 49.875 32.7916 49.1102 32.7916 48.1667V20.8333C32.7916 19.8898 33.5565 19.125 34.5 19.125Z" fill="#0169FE"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M24.25 36.2084C25.1934 36.2084 25.9583 36.9732 25.9583 37.9167V48.1667C25.9583 49.1102 25.1934 49.875 24.25 49.875C23.3065 49.875 22.5416 49.1102 22.5416 48.1667V37.9167C22.5416 36.9732 23.3065 36.2084 24.25 36.2084Z" fill="#0169FE"/>
             </svg>
-            <h3>Exchange</h3>
-            <span>Trade on different exchanges within your wallet</span>
+            <h3>{{ $t('mainCaptionTwo') }}</h3>
+            <span>{{ $t('mainPBlockThree') }}</span>
           </div>
           <div class="advantages-item">
             <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -65,16 +65,16 @@
                 </clipPath>
               </defs>
             </svg>
-            <h3 id="mainCaptionThree">Swap</h3>
-            <span id="mainPBlockFour">Create your own liquidity pool or join an excisting one to start earning.</span>
+            <h3>{{ $t('mainCaptionThree') }}</h3>
+            <span>{{ $t('mainPBlockFour') }}</span>
           </div>
           <div class="advantages-item">
             <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#2BDDC6" fill-opacity="0.1"/>
               <path d="M50.1566 20.1159C50.0883 19.4325 49.5758 18.9201 48.8925 18.8518C40.2483 18.1685 34.0641 22.3709 30.2033 27.6325C28.085 26.9492 25.7958 27.1884 23.7116 28.3501C21.6958 29.4776 20.0216 31.391 18.9283 33.7143C18.6891 34.261 18.7916 34.8758 19.2358 35.2858C19.6458 35.6958 20.295 35.7642 20.8075 35.4909C22.9941 34.3292 25.4541 34.5684 26.9233 36.0376L32.9366 42.0509L32.9708 42.0851C34.44 43.5543 34.6791 46.0143 33.5175 48.2009C33.2441 48.7134 33.3466 49.3626 33.7225 49.7726C33.9958 50.046 34.3375 50.1825 34.7133 50.1825C34.9183 50.1825 35.1233 50.1484 35.2941 50.0459C37.6175 48.9526 39.5308 47.2442 40.6583 45.2626C41.8541 43.1784 42.0933 40.8892 41.3758 38.7367C42.9133 37.6092 44.3141 36.3792 45.4758 35.0126C49.0633 30.8784 50.635 25.8559 50.1566 20.1159ZM23.37 32.04C24.8391 30.605 26.6841 29.7167 28.6316 30.0584C28.085 31.0151 27.6408 31.9717 27.2308 32.9284C26.0691 32.2792 24.7366 31.9717 23.37 32.04ZM37.0025 45.6384C37.0366 44.2376 36.7291 42.9051 36.1141 41.7435C37.105 41.3335 38.0616 40.8551 38.9841 40.3426C39.3258 42.2901 38.4716 44.1693 37.0025 45.6384ZM34.2691 39.5226L29.4516 34.7051C31.8775 28.2476 37.8566 21.3117 47.4575 21.5167C47.7991 32.9626 38.3691 37.9168 34.2691 39.5226ZM43.1183 25.89C43.5283 26.3 43.7675 26.8809 43.7675 27.4617C43.7675 28.0425 43.5283 28.6234 43.1183 29.0334C42.7083 29.4434 42.1275 29.6825 41.5466 29.6825C40.9658 29.6825 40.385 29.4434 39.975 29.0334C39.565 28.6234 39.3258 28.0425 39.3258 27.4617C39.3258 26.8809 39.565 26.3 39.975 25.89C40.385 25.48 40.9658 25.2409 41.5466 25.2409C42.1275 25.2409 42.7083 25.48 43.1183 25.89ZM23.8825 40.1034C22.3108 41.675 22.2425 44.8184 22.2425 45.4334C22.2425 46.1851 22.8575 46.8001 23.6091 46.8001H23.6433C24.3608 46.8001 27.3675 46.6976 28.905 45.1601C29.8616 44.2035 30.0666 43.2126 30.0666 42.5634C30.0666 41.6409 29.6908 40.7526 28.9733 40.0351C27.265 38.2926 25.1125 38.8392 23.8825 40.1034ZM26.9916 43.2126C26.65 43.5542 25.8983 43.7934 25.1125 43.8959C25.2491 43.1101 25.4883 42.3584 25.7958 42.0509C26.035 41.8118 26.24 41.6751 26.4791 41.6751C26.65 41.6751 26.855 41.7775 27.06 41.9825C27.265 42.1875 27.3675 42.3926 27.3675 42.5634C27.3333 42.7684 27.1625 43.0417 26.9916 43.2126Z" fill="#2BDDC6"/>
             </svg>
-            <h3 id="mainCaptionFour">DeFi</h3>
-            <span id="mainPBlockFive">Join leading DeFi projects and increase your income.</span>
+            <h3>{{ $t('mainCaptionFour') }}</h3>
+            <span>{{ $t('mainPBlockFive') }}</span>
           </div>
         </div>
       </div>
@@ -92,8 +92,8 @@
                 </div>
                 <div class="column aos-init aos-animate padd-top" data-aos="fade-up">
                   <div class="text">
-                    <h2>TBCC wallet benefits</h2>
-                    <p>A universal and convenient application for trading, earning and storing cryptocurrency. Exchange your assets with other users in a few clicks. Make transactions with your digital assets anywhere, anytime.</p>
+                    <h2>{{ $t('mainCaptionSix') }}</h2>
+                    <p>{{ $t('mainPBlockSix') }}</p>
                   </div>
                   <div class="val-box">
                     <div class="val-item">
@@ -102,28 +102,28 @@
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M16.25 25C15.5596 25 15 25.5596 15 26.25V35C15 35.6904 15.5596 36.25 16.25 36.25H33.75C34.4404 36.25 35 35.6904 35 35V26.25C35 25.5596 34.4404 25 33.75 25H16.25ZM12.5 26.25C12.5 24.1789 14.1789 22.5 16.25 22.5H33.75C35.8211 22.5 37.5 24.1789 37.5 26.25V35C37.5 37.0711 35.8211 38.75 33.75 38.75H16.25C14.1789 38.75 12.5 37.0711 12.5 35V26.25Z" fill="#0169FE"/>
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M25 13.75C23.6739 13.75 22.4021 14.2768 21.4645 15.2145C20.5268 16.1521 20 17.4239 20 18.75V23.75C20 24.4404 19.4404 25 18.75 25C18.0596 25 17.5 24.4404 17.5 23.75V18.75C17.5 16.7609 18.2902 14.8532 19.6967 13.4467C21.1032 12.0402 23.0109 11.25 25 11.25C26.9891 11.25 28.8968 12.0402 30.3033 13.4467C31.7098 14.8532 32.5 16.7609 32.5 18.75V23.75C32.5 24.4404 31.9404 25 31.25 25C30.5596 25 30 24.4404 30 23.75V18.75C30 17.4239 29.4732 16.1521 28.5355 15.2145C27.5979 14.2768 26.3261 13.75 25 13.75Z" fill="#0169FE"/>
                       </svg>
-                      <span>Modern and secure wallet with a user-friendly interface and endless possibilities</span>
+                      <span>{{ $t('mainTextItemOne') }}</span>
                     </div>
                     <div class="val-item">
                       <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="#29C0FF" fill-opacity="0.1"/>
                         <path d="M31.5814 26.825C31.9064 27.15 32.0814 27.6 32.0814 28.075C32.0814 28.525 31.9064 28.975 31.5814 29.3C31.2564 29.625 30.8064 29.825 30.3314 29.825C29.8814 29.825 29.4314 29.625 29.0814 29.3C28.7564 28.975 28.5814 28.525 28.5814 28.075C28.5814 27.6 28.7814 27.175 29.0814 26.825C29.4064 26.5 29.8564 26.325 30.3314 26.325C30.8064 26.325 31.2564 26.5 31.5814 26.825ZM36.2563 22.925V33.975C36.2563 35.1 35.3564 36 34.2314 36H16.1313C14.8063 36 13.7563 34.925 13.7563 33.625V24.625V22.525V19C13.7563 17.35 15.1063 16 16.7563 16H30.5814C31.9564 16 33.0063 17.125 33.0063 18.5V20H33.4564C35.0064 20 36.2563 21.375 36.2563 22.925ZM15.6064 19C15.6064 19.55 16.0564 20 16.6064 20H31.0063V18.45C31.0063 18.2 30.8063 18 30.5563 18H16.6064C16.0564 18 15.6064 18.45 15.6064 19ZM34.2563 22.925C34.2563 22.5 33.9064 22 33.4564 22H16.1563C15.9313 22 15.7563 22.3 15.7563 22.525V24.625V33.625C15.7563 33.825 15.9313 34 16.1313 34H34.2314C34.2564 34 34.2563 33.975 34.2563 33.975V22.925Z" fill="#29C0FF"/>
                       </svg>
-                      <span>Supports top cryptocurrencies operationg on ERC-20, Etherium 2.0, BEP2, BEP8 protocols</span>
+                      <span>{{ $t('mainTextItemTwo') }}</span>
                     </div>
                     <div class="val-item">
                       <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="#2BD7C0" fill-opacity="0.1"/>
                         <path d="M36.456 14.475C36.406 13.975 36.031 13.6001 35.531 13.5501C29.206 13.0501 24.681 16.125 21.856 19.975C20.306 19.475 18.631 19.65 17.106 20.5C15.631 21.325 14.406 22.7251 13.606 24.4251C13.431 24.8251 13.506 25.275 13.831 25.575C14.131 25.875 14.606 25.925 14.981 25.725C16.581 24.875 18.381 25.05 19.456 26.125L23.856 30.5251L23.881 30.5501C24.956 31.6251 25.131 33.4251 24.281 35.0251C24.081 35.4001 24.156 35.8751 24.431 36.1751C24.631 36.3751 24.881 36.475 25.156 36.475C25.306 36.475 25.456 36.45 25.581 36.375C27.281 35.575 28.681 34.325 29.506 32.875C30.381 31.35 30.556 29.675 30.031 28.1C31.156 27.275 32.181 26.375 33.031 25.375C35.656 22.35 36.806 18.675 36.456 14.475ZM16.856 23.2C17.931 22.15 19.281 21.5 20.706 21.75C20.306 22.45 19.981 23.15 19.681 23.85C18.831 23.375 17.856 23.15 16.856 23.2ZM26.831 33.1501C26.856 32.1251 26.631 31.1501 26.181 30.3001C26.906 30.0001 27.606 29.6501 28.281 29.2751C28.531 30.7001 27.906 32.0751 26.831 33.1501ZM24.831 28.6751L21.306 25.1501C23.081 20.4251 27.456 15.35 34.481 15.5C34.731 23.875 27.831 27.5001 24.831 28.6751ZM31.306 18.7C31.606 19 31.781 19.425 31.781 19.85C31.781 20.275 31.606 20.7 31.306 21C31.006 21.3 30.581 21.475 30.156 21.475C29.731 21.475 29.306 21.3 29.006 21C28.706 20.7 28.531 20.275 28.531 19.85C28.531 19.425 28.706 19 29.006 18.7C29.306 18.4 29.731 18.225 30.156 18.225C30.581 18.225 31.006 18.4 31.306 18.7ZM17.231 29.1C16.081 30.25 16.031 32.55 16.031 33C16.031 33.55 16.481 34 17.031 34H17.056C17.581 34 19.781 33.9251 20.906 32.8001C21.606 32.1001 21.756 31.3751 21.756 30.9001C21.756 30.2251 21.481 29.5751 20.956 29.0501C19.706 27.7751 18.131 28.175 17.231 29.1ZM19.506 31.375C19.256 31.625 18.706 31.8 18.131 31.875C18.231 31.3 18.406 30.7501 18.631 30.5251C18.806 30.3501 18.956 30.25 19.131 30.25C19.256 30.25 19.406 30.325 19.556 30.475C19.706 30.625 19.781 30.7751 19.781 30.9001C19.756 31.0501 19.631 31.25 19.506 31.375Z" fill="#2BD7C0"/>
                       </svg>
-                      <span>Built-in support for DeFi cryptoassets</span>
+                      <span>{{ $t('mainTextItemThree') }}</span>
                     </div>
                     <div class="val-item">
                       <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path fill-rule="evenodd" clip-rule="evenodd" d="M25 50C38.8071 50 50 38.8071 50 25C50 11.1929 38.8071 0 25 0C11.1929 0 0 11.1929 0 25C0 38.8071 11.1929 50 25 50Z" fill="#29C0FF" fill-opacity="0.1"/>
                         <path d="M31.5814 26.825C31.9064 27.15 32.0814 27.6 32.0814 28.075C32.0814 28.525 31.9064 28.975 31.5814 29.3C31.2564 29.625 30.8064 29.825 30.3314 29.825C29.8814 29.825 29.4314 29.625 29.0814 29.3C28.7564 28.975 28.5814 28.525 28.5814 28.075C28.5814 27.6 28.7814 27.175 29.0814 26.825C29.4064 26.5 29.8564 26.325 30.3314 26.325C30.8064 26.325 31.2564 26.5 31.5814 26.825ZM36.2563 22.925V33.975C36.2563 35.1 35.3564 36 34.2314 36H16.1313C14.8063 36 13.7563 34.925 13.7563 33.625V24.625V22.525V19C13.7563 17.35 15.1063 16 16.7563 16H30.5814C31.9564 16 33.0063 17.125 33.0063 18.5V20H33.4564C35.0064 20 36.2563 21.375 36.2563 22.925ZM15.6064 19C15.6064 19.55 16.0564 20 16.6064 20H31.0063V18.45C31.0063 18.2 30.8063 18 30.5563 18H16.6064C16.0564 18 15.6064 18.45 15.6064 19ZM34.2563 22.925C34.2563 22.5 33.9064 22 33.4564 22H16.1563C15.9313 22 15.7563 22.3 15.7563 22.525V24.625V33.625C15.7563 33.825 15.9313 34 16.1313 34H34.2314C34.2564 34 34.2563 33.975 34.2563 33.975V22.925Z" fill="#29C0FF"/>
                       </svg>
-                      <span>Even a beginner can easily start his cryptocurrency with TBCC Wallet</span>
+                      <span>{{ $t('mainTextItemDop') }}</span>
                     </div>
                   </div>
                   <link-box></link-box>
@@ -309,46 +309,27 @@ export default {
 
   data() {
     return {
-
+      testingCode: "TBCCPRO",
     };
   },
 
   methods: {
-    clipboardHandler() {
-    const copyMailId = document.querySelectorAll('.copy-text');
+    copyTestingCode () {
+      let testingCodeToCopy = document.querySelector('#testing-code')
 
-    copyMailId.forEach(copyText => {
-      copyText.addEventListener('click', () => {
-        const selection = window.getSelection();
-        const range = document.createRange();
-        range.selectNodeContents(copyText);
-        selection.removeAllRanges();
-        selection.addRange(range);
+      try {
+        var successful = document.execCommand('copy');
+        var msg = successful ? 'successful' : 'unsuccessful';
+        alert('Testing code was copied ' + msg);
+      } catch (err) {
+        alert('Oops, unable to copy');
+      }
 
-        try {
-          document.execCommand('copy');
-          selection.removeAllRanges();
-
-          const mailId = copyText.textContent;
-          copyText.textContent = 'Copied!';
-          copyText.classList.add('success');
-
-          setTimeout(() => {
-            copyText.textContent = mailId;
-            copyText.classList.remove('success');
-          }, 1000);
-        } catch (e) {
-          copyText.textContent = 'Couldn\'t copy, hit Ctrl+C!';
-          copyText.classList.add('error');
-
-          setTimeout(() => {
-            errorMsg.classList.remove('show');
-          }, 1200);
-        }
-      });
-    });
-  }
-  }
+      /* unselect the range */
+      testingCodeToCopy.setAttribute('type', 'hidden')
+      window.getSelection().removeAllRanges()
+    },
+  },
 };
 </script>
 

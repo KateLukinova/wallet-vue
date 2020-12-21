@@ -376,20 +376,12 @@ a.m-btn, button.m-btn {
 }
 
 .bg-img {
-  background-image: url("../img/all.png");
+  background-image: url("../img/hero.svg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
   padding-bottom: 120px;
   position: relative;
-
-  &:before {
-    content: url("../img/oval.svg");
-    position: absolute;
-    bottom: 22px;
-    width: 15vw;
-    left: 0;
-  }
 }
 
 .advantages-block {
