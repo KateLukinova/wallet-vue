@@ -82,11 +82,12 @@
         <div class="footer-nav">
           <a href="#" class="nav-caption">Information</a>
           <router-link to="/about" href="#">{{ $t('menuItemSix') }}</router-link>
-          <a href="#" class="a-title">Academy</a>
+          <router-link to="/academy">Academy</router-link>
         </div>
         <div class="footer-nav">
           <a href="#" class="nav-caption">Information</a>
-          <a href="#" class="a-title">{{ $t('menuItemSeven') }}</a>
+<!--          <a href="#" class="a-title">{{ $t('menuItemSeven') }}</a>-->
+          <router-link to="/team">{{ $t('menuItemSeven') }}</router-link>
           <router-link to="/contacts">{{ $t('menuItemEight') }}</router-link>
         </div>
       </div>

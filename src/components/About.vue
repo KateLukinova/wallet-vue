@@ -5,23 +5,24 @@
     </header>
     <section class="main-swap main-about">
       <div class="center-block">
-        <h2>About TBCC</h2>
+        <h2>{{ $t('aboutH1') }}</h2>
         <p>
-          TBCC Wallet is a modern mobile app developed for cryptoassets management. It was created by a group of developers with extensive experience in blockchain in 2019.        </p>
+          {{ $t('aboutPBlockOne') }}
+        </p>
       </div>
     </section>
     <section>
       <div class="two-block">
         <div class="column w-60" data-aos="fade-up">
-          <h2 class="big-h2">TBCC Wallet</h2>
+          <h2 class="big-h2">{{ $t('aboutBigH2') }}</h2>
           <p class="black-p">
-            Our wallet allows users from all over the world to make various operations with their cryptoassets. You can store your savings, trade them on various exchanges, send them to other wallet addresses, receive tokens from other users. TBCC Wallet supports leading cryptocurrencies based on BEP2, BEP8, ERC-20 protocols. In addition to the classic wallet functions, TBCC Wallet allows its users to participate in DeFi projects, SWAP, OTC. We are constantly updating our mobile application and expanding its capabilities in order to make it as convenient and beneficial to use as possible. Our main goal is to empower millions of people to use and work with cryptoassets. Even a beginner can easily get started with crypto thanks to our easy-to-use application with a user-friendly interface.
+            {{ $t('aboutPBlockTwo') }}
           </p>
           <p class="black-p">
-            TBCC Wallet is completely secure.
+            {{ $t('aboutPBlockThree') }}
           </p>
           <p class="black-p">
-            The security architecture of the blockchain wallet has been improved with advanced authentication methods to prevent unauthorized access. Only you have control over your cryptoassets.
+            {{ $t('aboutPBlockFour') }}
           </p>
         </div>
         <div class="column w-40" data-aos="fade-up">

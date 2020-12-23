@@ -62,6 +62,8 @@ const router = new VueRouter({
   }
 })
 
+window.eventBus = new Vue();
+
 // Vue init
 const app = new Vue({
   router,

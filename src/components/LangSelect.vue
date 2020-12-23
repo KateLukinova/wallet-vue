@@ -37,7 +37,9 @@
     methods: {
       changeLang: function () {
         this.$i18n.locale = this.selected.label.toLowerCase();
-        console.log(this.selected.label.toLowerCase())
+        eventBus.$emit('langChanged', {
+          lang: this.selected.label.toLowerCase()
+        })
       }
     },
 

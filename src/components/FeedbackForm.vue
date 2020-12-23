@@ -49,7 +49,7 @@
                    v-model="message"
             >
           </div>
-          <button type="submit" class="m-btn mt-5 form-button" id="contacts-button">{{ $t('textFormButton') }}</button>
+          <button type="submit" class="m-btn form-button" v-bind:class="{ hide : isAlert }">{{ $t('textFormButton') }}</button>
         </form>
       </div>
     </div>
@@ -65,10 +65,12 @@
       return {
         name: '',
         email: '',
-        message: ''
+        message: '',
+        isAlert: false
       }
     },
     methods: {
+
       processForm: function() {
         const options = {
           method: 'POST',
@@ -80,7 +82,7 @@
             if (response.data) {
               alert(response.data);
             } else {
-              alert('Успех');
+              this.isAlert = !this.isAlert
             }
         });
       }
@@ -175,6 +177,32 @@
     button {
       width: 100%;
     }
+  }
+
+  .form-button.hide {
+    color: transparent;
+    position: relative;
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      content: 'Thank you, your message has been accepted';
+      font-family: 'Golos-Regular', sans-serif;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 1.2;
+      text-align: center;
+      color: #FFFFFF;
+      @media (max-width: 990px) {
+        font-size: 12px;
+      }
+    }
+
   }
 
   @media (max-width: 1440px) {

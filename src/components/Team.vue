@@ -6,9 +6,9 @@
     <div class="gradient-color main-go">
       <section class="main-page">
         <div class="center-block">
-          <h1>We are TBCC Wallet</h1>
+          <h1>{{ $t('teamH1') }}</h1>
           <p>
-            TBCC Wallet is a blockchain wallet for everyone. Our mission is to make your work with crypto assets easy, convinient, safe and understandable. We are always in a search for new services to make the app better for you to use.
+            {{ $t('teamPBlockOne') }}
           </p>
         </div>
         <div class="team-box">
@@ -47,8 +47,7 @@
               Bulanaeva
             </div>
             <div class="team-pos">
-              Chief Communications
-              Officer
+              Chief Marketing Officer
             </div>
           </div>
           <div class="team-item">
