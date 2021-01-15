@@ -1,5 +1,5 @@
 <template>
-  <section>
+  <section   data-aos="fade-up" data-aos-duration="700">
     <div class="two-block">
       <div class="column aos-init aos-animate founded" data-aos="fade-up">
         <img src="../assets/img/Pics.svg" alt="" class="before">

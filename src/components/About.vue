@@ -5,8 +5,10 @@
     </header>
     <section class="main-swap main-about">
       <div class="center-block">
-        <h2>{{ $t('aboutH1') }}</h2>
-        <p>
+        <h2  data-aos="zoom-in" data-aos-duration="700">
+          {{ $t('aboutH1') }}
+        </h2>
+        <p   data-aos="zoom-in" data-aos-duration="700" data-aos-delay="100">
           {{ $t('aboutPBlockOne') }}
         </p>
       </div>
@@ -25,7 +27,7 @@
             {{ $t('aboutPBlockFour') }}
           </p>
         </div>
-        <div class="column w-40" data-aos="fade-up">
+        <div class="column w-40"  data-aos="fade-left" data-aos-duration="700">
           <img src="../assets/img/ab.svg" alt="" style="max-width: 540px; width: 100%">
         </div>
       </div>

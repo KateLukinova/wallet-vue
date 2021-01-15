@@ -70,3 +70,10 @@ const app = new Vue({
   i18n,
   mode: 'history'
 }).$mount('#app')
+
+
+//aos
+import AOS from "aos";
+import "aos/dist/aos.css";
+app.AOS = new AOS.init({ disable: "phone" });
+

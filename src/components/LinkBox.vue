@@ -1,6 +1,6 @@
 <template>
   <div class="link-box">
-    <a href="#">
+    <a href="#" data-aos="fade-up" data-aos-duration="700" data-aos-delay="500">
       <svg width="209" height="66" viewBox="0 0 209 66" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="209" height="66" fill="url(#pattern0)"/>
         <rect x="61" y="8" width="135" height="51" fill="black"/>
@@ -17,7 +17,7 @@
         </defs>
       </svg>
     </a>
-    <a href="https://hkapi.tbcc.tech/update/tbccwallet.apk">
+    <a href="https://hkapi.tbcc.tech/update/tbccwallet.apk" data-aos="fade-up" data-aos-duration="700" data-aos-delay="600">
       <svg width="209" height="66" viewBox="0 0 209 66" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
         <rect width="209" height="66" fill="url(#pattern0)"/>
         <rect x="11" y="8" width="188" height="51" fill="black"/>

@@ -5,15 +5,15 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  
+
 <!--
 These webfonts were purchased at www.ParaType.com
 You can purchase them too. Please don't steal them.
 
 Please don't remove this notice. Thanks.
--->	
+-->
 	<title>Font Face Demo</title>
-	<link rel="stylesheet" href="Golos%20Text_Black.css" type="text/css" charset="utf-8">
+	<link rel="stylesheet preload" href="Golos%20Text_Black.css" type="text/css" charset="utf-8">
 	<style type="text/css" media="screen">
 		body {font-family: Helvetica, Arial, sans-serif; color:#333333;}
 		.GolosTextWebBlack {
@@ -58,31 +58,31 @@ Please don't remove this notice. Thanks.
 			border: none;
 		}
 		.active{
-			background-color: #808080;			
+			background-color: #808080;
 		}
-		
-		
+
+
 	</style>
 <script type="text/javascript">
 		fsize = 24
 		window.onload = function(){ active('kern')};
 function less()
 {
-	if (fsize > 2) {	
+	if (fsize > 2) {
 		fsize = fsize-1;
 		p = document.getElementById('sample');
 		p.style.fontSize = fsize + "px";
 		document.getElementById('stext').value = fsize + "px";
 	}
-}	
+}
 
 function more()
 {
-	if (fsize < 100) {	
+	if (fsize < 100) {
 		fsize = fsize+1;
 		setSize ()
 	}
-}	
+}
 
 function setSize ()
 {
@@ -101,9 +101,9 @@ function changeFSize()
 }
 function active(value)
 {
-	const button = document.getElementById(value); 	
+	const button = document.getElementById(value);
 	const allFeatures = document.querySelectorAll(".features button");
-	button.classList.toggle('active');	
+	button.classList.toggle('active');
 	let features = "";
 	for(let i = 0; i < allFeatures.length; i ++){
 		features += "'" + allFeatures[i].id + "'" + " ";
@@ -111,19 +111,19 @@ function active(value)
 			features += "1";
 		}
 		else { features += "0"}
-		
+
 		if(i+1 !== allFeatures.length) {
-			features += ",";	
+			features += ",";
 		}
-	}	
+	}
 	let sample = document.getElementById('sample');
 	let sampleText = document.getElementById('sample-text');
 	let styles = "font-feature-settings:" + features + ";";
 	sample.setAttribute("style", styles);
-	sampleText.setAttribute("style", styles);	
+	sampleText.setAttribute("style", styles);
 	setSize();
 }
-</script>	
+</script>
 </head>
 <body>
 	<div id="container">
@@ -145,7 +145,8 @@ Jelly-like above the high wire, six quaking pachyderms kept the climax of the ex
 		Character Set: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <input type="button" value="-" onClick="less()"> &nbsp;&nbsp;<input id="stext" type="text" value="24px" style="width:40px"> &nbsp;&nbsp;<input type="button" value="+" onClick="more()"></p>
 		</form>
 		<p id="sample" class="GolosTextWebBlack samplebox" style="font-size:24px;">
-			   ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~   ¡ ¢ £ ¤ ¥ ¦ § ¨ © ª « ¬ ­ ® ¯ ° ± ² ³ ´ µ ¶ · ¸ ¹ º » ¼ ½ ¾ ¿ À Á Â Ã Ä Å Æ Ç È É Ê Ë Ì Í Î Ï Ð Ñ Ò Ó Ô Õ Ö × Ø Ù Ú Û Ü Ý Þ ß à á â ã ä å æ ç è é ê ë ì í î ï ð ñ ò ó ô õ ö ÷ ø ù ú û ü ý þ ÿ ı Ł ł Œ œ Š š Ÿ Ž ž ƒ ȷ ʼ ˆ ˇ ˙ ˚ ˜ Ё Ђ Ѓ Є Ѕ І Ї Ј Љ Њ Ћ Ќ Ў Џ А Б В Г Д Е Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я ё ђ ѓ є ѕ і ї ј љ њ ћ ќ ў џ Ґ ґ ‐ ‑ ‒ – — ‘ ’ ‚ “ ” „ † ‡ • … ‰ ‹ › ⁄ ⁴ € ₴ ₽ № ™ ← ↑ → ↓ ↖ ↗ ↘ ↙ ∆ − ∕ √ ≈ ≤ ≥ 〈 〉                   ﻿           
+
+   ! " # $ % & ' ( ) * + , - . / 0 1 2 3 4 5 6 7 8 9 : ; < = > ? @ A B C D E F G H I J K L M N O P Q R S T U V W X Y Z [ \ ] ^ _ ` a b c d e f g h i j k l m n o p q r s t u v w x y z { | } ~   ¡ ¢ £ ¤ ¥ ¦ § ¨ © ª « ¬ ­ ® ¯ ° ± ² ³ ´ µ ¶ · ¸ ¹ º » ¼ ½ ¾ ¿ À Á Â Ã Ä Å Æ Ç È É Ê Ë Ì Í Î Ï Ð Ñ Ò Ó Ô Õ Ö × Ø Ù Ú Û Ü Ý Þ ß à á â ã ä å æ ç è é ê ë ì í î ï ð ñ ò ó ô õ ö ÷ ø ù ú û ü ý þ ÿ ı Ł ł Œ œ Š š Ÿ Ž ž ƒ ȷ ʼ ˆ ˇ ˙ ˚ ˜ Ё Ђ Ѓ Є Ѕ І Ї Ј Љ Њ Ћ Ќ Ў Џ А Б В Г Д Е Ж З И Й К Л М Н О П Р С Т У Ф Х Ц Ч Ш Щ Ъ Ы Ь Э Ю Я а б в г д е ж з и й к л м н о п р с т у ф х ц ч ш щ ъ ы ь э ю я ё ђ ѓ є ѕ і ї ј љ њ ћ ќ ў џ Ґ ґ ‐ ‑ ‒ – — ‘ ’ ‚ “ ” „ † ‡ • … ‰ ‹ › ⁄ ⁴ € ₴ ₽ № ™ ← ↑ → ↓ ↖ ↗ ↘ ↙ ∆ − ∕ √ ≈ ≤ ≥ 〈 〉                   ﻿          
 		</p>
 	</div>
 	<div class="features">

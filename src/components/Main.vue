@@ -6,14 +6,14 @@
     <div class="container-fluid p-0 gradient-color">
       <section class="main-page">
         <div class="text-block">
-          <h1>
+          <h1 data-aos="fade-up" data-aos-duration="700">
             {{ $t('mainH1') }}
           </h1>
-          <p>
+          <p data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
             {{ $t('mainDopText') }}
           </p>
           <link-box></link-box>
-          <p class="sponsors-text" id="mainNextText" style="display: block">
+          <p class="sponsors-text" id="mainNextText" style="display: block" data-aos="fade-up" data-aos-duration="700" data-aos-delay="800">
             {{ $t('testingCodeBefore') }}
             <span>
               <a href="#"
@@ -24,23 +24,23 @@
             </span>
             {{ $t('testingCodeAfter') }}
           </p>
-          <p class="sponsors-text">{{ $t('mainPBlockTwo') }}</p>
+          <p class="sponsors-text" data-aos="fade-up" data-aos-duration="700" data-aos-delay="900">{{ $t('mainPBlockTwo') }}</p>
           <sponsors-list></sponsors-list>
         </div>
-        <div class="img-block" data-aos="fade-left" data-aos-delay="900">
+        <div class="img-block" data-aos="fade-left" data-aos-duration="700">
           <img src="../assets/img/Items.png" alt="">
         </div>
       </section>
     </div>
     <section class="container-fluid p-0 pt-5 bg-img">
       <div class="center-block">
-        <div class="aos-init aos-animate" data-aos="fade-up">
-          <div class="text">
+        <div>
+          <div class="text" data-aos="fade-up" data-aos-duration="700">
             <h2>{{ $t('mainCaptionOne') }}</h2>
           </div>
         </div>
         <div class="advantages-block">
-          <div class="advantages-item">
+          <div class="advantages-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="100">
             <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#0169FE" fill-opacity="0.1"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M44.75 29.375C45.6934 29.375 46.4583 30.1398 46.4583 31.0833V48.1667C46.4583 49.1102 45.6934 49.875 44.75 49.875C43.8065 49.875 43.0416 49.1102 43.0416 48.1667V31.0833C43.0416 30.1398 43.8065 29.375 44.75 29.375Z" fill="#0169FE"/>
@@ -50,7 +50,7 @@
             <h3>{{ $t('mainCaptionTwo') }}</h3>
             <span>{{ $t('mainPBlockThree') }}</span>
           </div>
-          <div class="advantages-item">
+          <div class="advantages-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="200">
             <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#17A5E1" fill-opacity="0.1"/>
               <g clip-path="url(#clip0)">
@@ -68,7 +68,7 @@
             <h3>{{ $t('mainCaptionThree') }}</h3>
             <span>{{ $t('mainPBlockFour') }}</span>
           </div>
-          <div class="advantages-item">
+          <div class="advantages-item" data-aos="fade-up" data-aos-duration="700" data-aos-delay="300">
             <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd" d="M34.5 69C53.5538 69 69 53.5538 69 34.5C69 15.4462 53.5538 0 34.5 0C15.4462 0 0 15.4462 0 34.5C0 53.5538 15.4462 69 34.5 69Z" fill="#2BDDC6" fill-opacity="0.1"/>
               <path d="M50.1566 20.1159C50.0883 19.4325 49.5758 18.9201 48.8925 18.8518C40.2483 18.1685 34.0641 22.3709 30.2033 27.6325C28.085 26.9492 25.7958 27.1884 23.7116 28.3501C21.6958 29.4776 20.0216 31.391 18.9283 33.7143C18.6891 34.261 18.7916 34.8758 19.2358 35.2858C19.6458 35.6958 20.295 35.7642 20.8075 35.4909C22.9941 34.3292 25.4541 34.5684 26.9233 36.0376L32.9366 42.0509L32.9708 42.0851C34.44 43.5543 34.6791 46.0143 33.5175 48.2009C33.2441 48.7134 33.3466 49.3626 33.7225 49.7726C33.9958 50.046 34.3375 50.1825 34.7133 50.1825C34.9183 50.1825 35.1233 50.1484 35.2941 50.0459C37.6175 48.9526 39.5308 47.2442 40.6583 45.2626C41.8541 43.1784 42.0933 40.8892 41.3758 38.7367C42.9133 37.6092 44.3141 36.3792 45.4758 35.0126C49.0633 30.8784 50.635 25.8559 50.1566 20.1159ZM23.37 32.04C24.8391 30.605 26.6841 29.7167 28.6316 30.0584C28.085 31.0151 27.6408 31.9717 27.2308 32.9284C26.0691 32.2792 24.7366 31.9717 23.37 32.04ZM37.0025 45.6384C37.0366 44.2376 36.7291 42.9051 36.1141 41.7435C37.105 41.3335 38.0616 40.8551 38.9841 40.3426C39.3258 42.2901 38.4716 44.1693 37.0025 45.6384ZM34.2691 39.5226L29.4516 34.7051C31.8775 28.2476 37.8566 21.3117 47.4575 21.5167C47.7991 32.9626 38.3691 37.9168 34.2691 39.5226ZM43.1183 25.89C43.5283 26.3 43.7675 26.8809 43.7675 27.4617C43.7675 28.0425 43.5283 28.6234 43.1183 29.0334C42.7083 29.4434 42.1275 29.6825 41.5466 29.6825C40.9658 29.6825 40.385 29.4434 39.975 29.0334C39.565 28.6234 39.3258 28.0425 39.3258 27.4617C39.3258 26.8809 39.565 26.3 39.975 25.89C40.385 25.48 40.9658 25.2409 41.5466 25.2409C42.1275 25.2409 42.7083 25.48 43.1183 25.89ZM23.8825 40.1034C22.3108 41.675 22.2425 44.8184 22.2425 45.4334C22.2425 46.1851 22.8575 46.8001 23.6091 46.8001H23.6433C24.3608 46.8001 27.3675 46.6976 28.905 45.1601C29.8616 44.2035 30.0666 43.2126 30.0666 42.5634C30.0666 41.6409 29.6908 40.7526 28.9733 40.0351C27.265 38.2926 25.1125 38.8392 23.8825 40.1034ZM26.9916 43.2126C26.65 43.5542 25.8983 43.7934 25.1125 43.8959C25.2491 43.1101 25.4883 42.3584 25.7958 42.0509C26.035 41.8118 26.24 41.6751 26.4791 41.6751C26.65 41.6751 26.855 41.7775 27.06 41.9825C27.265 42.1875 27.3675 42.3926 27.3675 42.5634C27.3333 42.7684 27.1625 43.0417 26.9916 43.2126Z" fill="#2BDDC6"/>
@@ -85,12 +85,12 @@
           <v-tab :title="$t('tabButtonOne')">
             <div class="tab_item">
               <div class="two-block mobile-column-reverse">
-                <div class="column aos-init aos-animate" data-aos="fade-left">
+                <div class="column"  data-aos="fade-right" data-aos-duration="700">
                   <div class="img">
                     <img src="../assets/img/Item2.svg" alt="">
                   </div>
                 </div>
-                <div class="column aos-init aos-animate padd-top" data-aos="fade-up">
+                <div class="column padd-top">
                   <div class="text">
                     <h2>{{ $t('mainCaptionSix') }}</h2>
                     <p>{{ $t('mainPBlockSix') }}</p>
@@ -135,12 +135,12 @@
           <v-tab :title="$t('tabButtonTwo')">
             <div class="tab_item">
               <div class="two-block mobile-column-reverse">
-                <div class="column aos-init aos-animate" data-aos="fade-left">
+                <div class="column">
                   <div class="img">
                     <img src="../assets/img/tail1.svg" alt="">
                   </div>
                 </div>
-                <div class="column aos-init aos-animate padd-top" data-aos="fade-up">
+                <div class="column padd-top">
                   <div class="text">
                     <h2>{{ $t('mainCaptionDop') }}</h2>
                     <p>{{ $t('mainTabPOne') }}</p>
@@ -179,7 +179,7 @@
           <v-tab :title="$t('tabButtonThree')">
             <div class="tab_item">
               <div class="two-block mobile-column-reverse">
-                <div class="column aos-init aos-animate" data-aos="fade-left">
+                <div class="column">
                   <div class="img">
                     <img src="../assets/img/Item3.svg" alt="">
                   </div>
@@ -221,7 +221,7 @@
           <v-tab :title="$t('tabButtonFour')">
             <div class="tab_item">
               <div class="two-block mobile-column-reverse">
-                <div class="column aos-init aos-animate" data-aos="fade-left">
+                <div class="column">
                   <div class="img">
                     <img src="../assets/img/Item4.svg" alt="">
                   </div>
@@ -296,6 +296,8 @@
   import BottomBlock from './BottomBlock.vue';
   import Tabs from 'vue-nav-tabs/dist/vue-tabs.js'
   import 'vue-nav-tabs/themes/vue-tabs.css'
+  import AOS from "aos";
+  import "aos/dist/aos.css";
 
 export default {
   components: {
@@ -304,7 +306,8 @@ export default {
     LinkBox,
     SponsorsList,
     FeedbackForm,
-    BottomBlock
+    BottomBlock,
+    AOS
   },
 
   data() {
@@ -329,6 +332,15 @@ export default {
       testingCodeToCopy.setAttribute('type', 'hidden')
       window.getSelection().removeAllRanges()
     },
+
+    aosEvent(d){
+      // event data
+      console.log(d);
+    }
+  },
+
+  created() {
+    document.addEventListener('aos:in', this.aosEvent)
   },
 };
 </script>

@@ -13,7 +13,7 @@
           </p>
           <a href="https://tbccswap.com/#/" class="m-btn">{{ $t('textButtonOne') }}</a>
         </div>
-        <div class="column justify-content-center align-items-center">
+        <div class="column justify-content-center align-items-center" data-aos="fade-left" data-aos-duration="700">
           <img src="../assets/img/swap-img.svg" alt="">
         </div>
       </div>

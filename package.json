@@ -4,7 +4,7 @@
   "description": "My template",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack-dev-server --port 8084 --open --config ./build/webpack.dev.conf.js",
+    "dev": "webpack-dev-server --port 8080 --open --config ./build/webpack.dev.conf.js",
     "build": "webpack --config ./build/webpack.build.conf.js"
   },
   "browserslist": [
@@ -30,10 +30,12 @@
   ],
   "license": "MIT",
   "dependencies": {
-    "axios": "^0.21.0",
+    "aos": "^3.0.0-beta.6",
+    "axios": "^0.21.1",
     "chart.js": "^2.9.3",
     "v-mask": "^2.1.0",
     "vue": "2.6.11",
+    "vue-axios": "^3.2.2",
     "vue-chartjs": "^3.5.0",
     "vue-i18n": "^8.22.2",
     "vue-nav-tabs": "^0.5.7",
@@ -46,8 +48,10 @@
   "devDependencies": {
     "@babel/core": "^7.7.7",
     "@babel/preset-env": "^7.7.7",
+    "@gfx/zopfli": "^1.0.15",
     "autoprefixer": "^9.7.3",
     "babel-loader": "^8.0.6",
+    "compression-webpack-plugin": "^7.1.2",
     "copy-webpack-plugin": "^5.1.1",
     "css-loader": "^3.4.0",
     "cssnano": "^4.1.10",

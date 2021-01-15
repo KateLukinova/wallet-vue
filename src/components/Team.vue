@@ -50,18 +50,6 @@
               Chief Marketing Officer
             </div>
           </div>
-          <div class="team-item">
-            <div class="team-img">
-              <img src="../assets/img/team4.svg" alt="">
-            </div>
-            <div class="team-name">
-              Andrey<br>
-              Voronkov
-            </div>
-            <div class="team-pos">
-              Advisor
-            </div>
-          </div>
         </div>
       </section>
     </div>

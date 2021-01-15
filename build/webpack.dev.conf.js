@@ -4,6 +4,8 @@
 const webpack = require("webpack");
 const merge = require("webpack-merge");
 const baseWebpackConfig = require("./webpack.base.conf");
+const CompressionPlugin = require("compression-webpack-plugin");
+
 
 const devWebpackConfig = merge(baseWebpackConfig, {
   mode: "development",

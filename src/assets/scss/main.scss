@@ -396,6 +396,7 @@ a.m-btn, button.m-btn {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 64px;
+  padding-bottom: 120px;
   .advantages-item {
     width: 260px;
     padding: 24px;
@@ -1378,6 +1379,10 @@ span.color-green {
 
   h6 {
     font-size: 16px;
+  }
+
+  .advantages-block {
+    padding-bottom: 30px;
   }
 }
 
